@@ -1,0 +1,80 @@
+#version: '3'
+#
+#services:
+#  myapp:
+#    build: .
+#    depends_on:
+#      - redis
+#      - postgres
+#    ports:
+#      - "8000:8000"
+#    environment:
+#      TOKEN_CACHE_URL: redis://localhost:6379/0
+#      ATTEMPT_CACHE_URL: redis://localhost:6379/1
+#      DATABASE_URL: postgresql+psycopg2://admin_user:password@db:5432/symptomatologic
+#    networks:
+#      - mynet
+##  redis:
+##    image: redis:latest
+##    ports:
+##      - "6379:6379"
+##    volumes:
+##      - redisdata:/data
+###      - ./redis.conf:/usr/local/etc/redis/redis.conf
+###    command: redis-server /usr/local/etc/redis/redis.conf
+##    networks:
+##      - mynet
+#  db:
+#    image: postgres:latest
+#    environment:
+#      POSTGRES_USER: admin_user
+#      POSTGRES_PASSWORD: password
+#      POSTGRES_DB: symptomatologic
+##    volumes:
+##      - dbdata:/var/lib/postgresql/data
+#    ports:
+#      - "5432:5432"
+#    networks:
+#      - mynet
+#
+#volumes:
+#  dbdata:
+#  redisdata:
+#
+#networks:
+#  mynet:
+#    driver: bridge
+version: '3.9'
+
+networks:
+  app_network:
+    driver: bridge
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: admin_user
+      POSTGRES_DB: symptomatologic
+    ports:
+      - "5432:5432"
+    networks:
+      - app_network
+
+  app:
+    build: .
+    command: ["python", "-m", "uvicorn", "main:app", "--reload", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql+psycopg2://admin_user:password@postgres:5432/symptomatologic
+      SECRET_KEY: 9f37d951ec4d12453a2218334154f4d4c2ea57becc18907c9ac9e6e013f165c8
+      ALGORITHM: HS256
+      ACCESS_TOKEN_EXPIRE_MINUTES: 30
+    depends_on:
+      - symptomatologic
+    networks:
+      - app_network
+
