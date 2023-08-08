@@ -1,294 +1,367 @@
 
 .register {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 99.1vw;
-  height: 80vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 99.1vw;
+    height: 80vh;
 }
 
 input[type="radio"] {
-  margin-right: 8px;
+    margin-right: 8px;
 }
-a{
-  display: flex;
-  margin: 0 4px;
-  padding: 6px 13px;
-  border-radius: 4px;
-  align-self: center;
-  color: white !important;
-  text-decoration: none !important;
+
+a {
+    display: flex;
+    margin: 0 4px;
+    padding: 6px 13px;
+    border-radius: 4px;
+    align-self: center;
+    color: white !important;
+    text-decoration: none !important;
 }
-.header a.active{
-  color: yellow !important;
-  background-color: black !important;
+
+.header a.active {
+    color: yellow !important;
+    background-color: black !important;
 }
 
 .details_inp {
-  margin-right: 8px;
-}
-.check__group {
-  max-height: 484px;
-  overflow-y: auto;
-}
-.check__group .list__item label{
-  border: none;
-}
-.error {
-  font-size: 17px;
-  color: red;
-  font-weight: bold;
-}
-.btn_cart {
-  border: 1px solid green;
-  font-size: 12px;
-  border-radius: 3px;
-  padding: 3px 4px;
-  cursor: pointer;
-  color: green;
-}
-.register .btn_cart:hover {
-  background-color: rgb(59, 192, 59);
-  border: 1px solid rgb(59, 192, 59);
-  color: white;
-}
-.ant-upload-select-picture-card i {
-  font-size: 32px;
-  color: #999;
-}
-.ant-upload-select-picture-card .ant-upload-text {
-  margin-top: 8px;
-  color: #666;
-}
-.check__group .list__item span {
-  color: #aaa;
-  font-size: small;
-}
-.karta_info span {
-  display: inline-block;
-  width: 190px !important;
-}
-.karta_info .css-ahj2mt-MuiTypography-root {
-  font-size: 15px;
-  font-weight: 500 !important;
+    margin-right: 8px;
 }
 
-.list_cont{
-  height: 561px;
-  position: relative;
-  overflow-y: auto;
+.check__group {
+    max-height: 484px;
+    overflow-y: auto;
 }
-.input_div{
-  position: relative;
+
+.check__group .list__item label {
+    border: none;
 }
-.input_div svg{
-  position: absolute;
-  top: 33px;
-  right: 10px;
-  cursor: pointer;
+
+.error {
+    font-size: 17px;
+    color: red;
+    font-weight: bold;
 }
-.input_div input{
-  padding-right: 44px;
+
+.btn_cart {
+    border: 1px solid green;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 3px 4px;
+    cursor: pointer;
+    color: green;
 }
-.input{
-  cursor: pointer;
+
+.register .btn_cart:hover {
+    background-color: rgb(59, 192, 59);
+    border: 1px solid rgb(59, 192, 59);
+    color: white;
 }
+
+.ant-upload-select-picture-card i {
+    font-size: 32px;
+    color: #999;
+}
+
+.ant-upload-select-picture-card .ant-upload-text {
+    margin-top: 8px;
+    color: #666;
+}
+
+.check__group .list__item span {
+    color: #aaa;
+    font-size: small;
+}
+
+.karta_info span {
+    display: inline-block;
+    width: 190px !important;
+}
+
+.karta_info .css-ahj2mt-MuiTypography-root {
+    font-size: 15px;
+    font-weight: 500 !important;
+}
+
+.list_cont {
+    height: 561px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.input_div {
+    position: relative;
+}
+
+.input_div svg {
+    position: absolute;
+    top: 33px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.input_div input {
+    padding-right: 44px;
+}
+
+.input {
+    cursor: pointer;
+}
+
 .css-1wc848c-MuiFormHelperText-root {
-  margin-left: 3px !important;
+    margin-left: 3px !important;
 }
-.reg_content{
-  margin: 0;
-  padding: 0;
+
+.reg_content {
+    margin: 0;
+    padding: 0;
 }
-.reg_center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+
+.reg_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
-.reg_center > .input{
-  position: absolute;
-  top: 227px;
+
+.reg_center > .input {
+    position: absolute;
+    top: 227px;
 }
-.register input[type="checkbox"]{
-  font-size: 30px;
-  margin-top: 5px;
-  cursor: pointer;
+
+.register input[type="checkbox"] {
+    font-size: 30px;
+    margin-top: 5px;
+    cursor: pointer;
 }
+
 .list_cont label,
 .modal-body label {
-  font-weight: 600;
-}
-.modal-body input{
-  width: 220px;
-  padding: 2.5px 7px;
-}
-.back__btn {
-  float: end;
-  font-size: 13px;
-  color: #1976d2;
-  text-decoration: underline;
-}
-.add__icon {
-  bottom: 30px;
-  right: 30px;
-  font-size: 50px !important;
-  position: absolute;
-  cursor: pointer;
-}
-.reg_center > .input > label{
-  margin-top: 7px;
-  font-size: 11px;
-  font-weight: bold;
-  cursor: pointer;
-}
-label{
-  cursor: pointer;
-}
-.bc{
-  top: 295px !important;
-}
-.b1{
-  left: 78px !important;
-}
-.b2{
-  left: 122px !important;
-}
-.b3{
-  left: 168px !important;
-}
-.b4{
-  left: 203px !important;
-}
-.b5{
-  left: 230px !important;
-}
-.b6{
-  left: 260px !important;
-}
-.b7{
-  left: 288px !important;
-}
-.b8{
-  left: 314px !important;
-}
-.b9{
-  left: 346px !important;
-}
-.b10{
-  left: 372px !important;
-}
-.b11{
-  left: 400px !important;
-}
-.b12{
-  left: 431px !important;
-}
-.b13{
-  left: 457px !important;
-}
-.b14{
-  left: 493px !important;
-}
-.b15{
-  left: 538px !important;
-}
-.b16{
-  left: 582px !important;
+    font-weight: 600;
 }
 
-.c1{
-  left: 78px !important;
+.modal-body input {
+    width: 220px;
+    padding: 2.5px 7px;
 }
-.c2{
-  left: 122px !important;
+
+.back__btn {
+    float: end;
+    font-size: 13px;
+    color: #1976d2;
+    text-decoration: underline;
 }
-.c3{
-  left: 164px !important;
+
+.add__icon {
+    bottom: 30px;
+    right: 30px;
+    font-size: 50px !important;
+    position: absolute;
+    cursor: pointer;
 }
-.c4{
-  left: 203px !important;
+
+.reg_center > .input > label {
+    margin-top: 7px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
 }
-.c5{
-  left: 233px !important;
+
+label {
+    cursor: pointer;
 }
-.c6{
-  left: 266px !important;
+
+.tooth {
+    position: relative;
+    max-width: 600px !important;
 }
+
+.bc {
+    top: 295px !important;
+}
+
+.b1 {
+    left: 40px !important;
+}
+
+.b2 {
+    left: 85px !important;
+}
+
+.b3 {
+    left: 130px!important;
+}
+
+.b4 {
+    left: 167px !important;
+}
+
+.b5 {
+    left: 195px !important;
+}
+
+.b6 {
+    left: 225px !important;
+}
+
+.b7 {
+    left: 252px !important;
+}
+
+.b8 {
+    left: 277px !important;
+}
+
+.b9 {
+    left: 309px !important;
+}
+
+.b10 {
+    left: 335px !important;
+}
+
+.b11 {
+    left: 362px !important;
+}
+
+.b12 {
+    left: 393px !important;
+}
+
+.b13 {
+    left: 420px !important;
+}
+
+.b14 {
+    left: 455px !important;
+}
+
+.b15 {
+    left: 500px !important;
+}
+
+.b16 {
+    left: 545px !important;
+}
+
+.c1 {
+    left: 40px !important;
+}
+
+.c2 {
+    left: 85px !important;
+}
+
+.c3 {
+    left: 130px !important;
+}
+
+.c4 {
+    left: 167px !important;
+}
+
+.c5 {
+    left: 195px !important;
+}
+
+.c6 {
+    left: 229px !important;
+}
+
 .c7, .c8, .c9, .c10 {
-  top: 288px !important;
+    top: 288px !important;
 }
-.c7{
-  left: 295px !important;
+
+.c7 {
+    left: 260px !important;
 }
-.c8{
-  left: 317.7px !important;
+
+.c8 {
+    left: 283px !important;
 }
-.c9{
-  left: 341px !important;
+
+.c9 {
+    left: 305px !important;
 }
-.c10{
-  left: 364px !important;
+
+.c10 {
+    left: 327px !important;
 }
-.c11{
-  left: 393px !important;
+
+.c11 {
+    left: 358px !important;
 }
-.c12{
-  left: 427px !important;
+
+.c12 {
+    left: 390px !important;
 }
-.c13{
-  left: 457px !important;
+
+.c13 {
+    left: 422px !important;
 }
-.c14{
-  left: 496px !important;
+
+.c14 {
+    left: 460px !important;
 }
-.c15{
-  left: 538px !important;
+
+.c15 {
+    left: 500px !important;
 }
-.c16{
-  left: 584px !important;
+
+.c16 {
+    left: 550px !important;
 }
 
 .info_item {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
 }
+
 .list__item {
-  display: block;
-  padding: 2px 20px;
-  font-weight: 600;
-  position: relative;
-  border-bottom: 1px solid #e9e9e9;
+    display: block;
+    padding: 2px 20px;
+    font-weight: 600;
+    position: relative;
+    border-bottom: 1px solid #e9e9e9;
 }
+
 .menu__btn {
-  position: absolute;
-  right: 0;
-  top: 1px;
+    position: absolute;
+    right: 0;
+    top: 1px;
 }
+
 .check__group .list__item {
-  padding: 0px 2px;
+    padding: 0px 2px;
 }
-.check__group .list__item:last-child{
-  border: none;
+
+.check__group .list__item:last-child {
+    border: none;
 }
+
 .css-j204z7-MuiFormControlLabel-root {
-  margin: 0 !important;
-  padding: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
+
 .ant-upload-list-picture-card-container {
-  width: 84px;
-  height: 84px;
-  margin: 5px;
+    width: 84px;
+    height: 84px;
+    margin: 5px;
 }
+
 .ant-upload-list-picture-card .ant-upload-list-item {
-  width: 84px;
-  height: 84px;
-  padding: 0px;
+    width: 84px;
+    height: 84px;
+    padding: 0px;
 }
+
 .ant-upload {
-  width: 84px !important;
-  height: 84px !important;
-  padding: 0;
-  margin: 5px;
+    width: 84px !important;
+    height: 84px !important;
+    padding: 0;
+    margin: 5px;
 }
