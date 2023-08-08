@@ -57,7 +57,7 @@ const ViewCart = ({ title, id }) => {
                       <Typography sx={{ color: 'text.secondary' }}>descriptions{el.treatmentteeth.description}</Typography>
                     </AccordionSummary>
                     <AccordionDetails className='karta_info'>
-                      <Typography><span>Attached ID:</span> {el.treatmentteeth.attached_id}</Typography>
+                      <Typography><span>Doctor:</span> {el.treatmentteeth.attached_id}</Typography>
                       <Typography><span>Tishlar:</span> {el.treatment_history.tooth_id.map(id => id +", ")}</Typography>
                       <Typography><span>Kasallik:</span> {el.treatment_history.complaint_id.map(el => el.name+"  "+el.price+" so'm")}</Typography>
                       <Typography><span>Treatments:</span> {el.treatment_history.treatment_id.map(el => el.name+"  "+el.price+" so'm")}</Typography>

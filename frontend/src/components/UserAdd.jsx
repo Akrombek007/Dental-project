@@ -50,7 +50,7 @@ const UserAdd = ({getAll}) => {
             <Grid item xs={12} sm={6}>
               <input
                 type="text"
-                placeholder="First Name"
+                placeholder="Ism"
                 className={
                   errors.first_name ? "is-invalid form-control" : "form-control"
                 }
@@ -63,7 +63,7 @@ const UserAdd = ({getAll}) => {
             <Grid item xs={12} sm={6}>
               <input
                 type="text"
-                placeholder="Last name"
+                placeholder="Familiya"
                 className={
                   errors.last_name ? "is-invalid form-control" : "form-control"
                 }
@@ -78,7 +78,7 @@ const UserAdd = ({getAll}) => {
                 className={ errors.role ? "is-invalid form-select" : "form-select" }
                 {...register("role", { required: true })}
               >
-                <option value="">Select role</option>
+                <option value="">Lavozimi</option>
                 <option value="admin">Admin</option>
                 <option value="doctor">Doctor</option>
                 <option value="register">Register</option>

@@ -24,8 +24,8 @@ const Admin = () => {
     e.target.parentElement.parentElement.classList.add("active");
 
     if(e.target.textContent === 'Dashboard') setAdminPath('')
-    if(e.target.textContent === 'Add User') setAdminPath('Add User')
-    if(e.target.textContent === 'Add Items') setAdminPath('Add Items')
+    if(e.target.textContent === 'Hodim qoshish') setAdminPath('Hodim qoshish')
+    if(e.target.textContent === 'Element qoshish') setAdminPath('Element qoshish')
   };
 
   const navigate = useNavigate()
@@ -94,13 +94,13 @@ const Admin = () => {
           <li>
             <a href="#" onClick={(e) => handleSidebar(e)}>
               <i className="bx bxs-shopping-bag-alt"></i>
-              <span className="text">Add User</span>
+              <span className="text">Hodim qoshish</span>
             </a>
           </li>
           <li>
             <a href="#" onClick={(e) => handleSidebar(e)}>
               <i className="bx bxs-shopping-bag-alt"></i>
-              <span className="text">Add Items</span>
+              <span className="text">Element qoshish</span>
             </a>
           </li>
         </ul>
@@ -141,8 +141,8 @@ const Admin = () => {
         </nav>
         {
           adminPath === '' ? <AdminMain doc={doctorItem} adm={adminItem} reg={registerItem} users={users}/> :
-          adminPath === 'Add User' ? <UserAdd getAll={getAllData}/> :
-          adminPath === 'Add Items' ? <CreateItems/> : ""
+          adminPath === 'Hodim qoshish' ? <UserAdd getAll={getAllData}/> :
+          adminPath === 'Element qoshish' ? <CreateItems/> : ""
           
         }
       </section>

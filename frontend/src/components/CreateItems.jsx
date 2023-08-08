@@ -63,7 +63,7 @@ const CreateItems = () => {
             <Grid item xs={12} sm={6}>
               <input
                 type="text"
-                placeholder="Name"
+                placeholder="Nomi"
                 className={
                   errors.name ? "is-invalid form-control" : "form-control"
                 }
@@ -76,7 +76,7 @@ const CreateItems = () => {
             <Grid item xs={12} sm={6}>
               <input
                 type="text"
-                placeholder="Price"
+                placeholder="Narxi"
                 className={
                   errors.price ? "is-invalid form-control" : "form-control"
                 }
